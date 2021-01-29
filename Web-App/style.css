@@ -1,0 +1,106 @@
+
+*{font-family:Arial;}
+
+body {
+    background-color: #191919;
+}
+
+.button {background-color: #FAB162 !important; 
+        width: 130px !important;
+        height: 45px !important;
+        font-weight: bold !important;
+        color: #191919 !important; 
+        font-size: 20px !important;
+        border: 5px solid #FAB162 !important; 
+        -webkit-transition-duration: 0.4s !important;
+        transition-duration: 0.4s !important;
+}
+
+
+.button:hover {
+  background-color: #191919 !important;
+  color: #FAB162!important;
+}
+
+#button8 {
+    background-color: #191919;
+    color: #191919;
+    border: 0px;
+}
+#button8:hover {
+    color: #191919;
+}
+
+#button14 {
+    background-color: #191919;
+    color: #191919;
+    border: 0px;
+}
+#button14:hover {
+    color: #191919;
+}
+
+
+.text {
+    font-weight: bold !important;
+    color: white !important; 
+    font-size: 20px !important;
+    text-align: left;
+}
+
+
+/* Some CSS styling */
+#left {
+    /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#sketchpad {
+    display: inline-block;
+    height:410px;
+    width:410px;
+    background:white;
+    border:2px solid #888;
+    border-radius:4px;
+    position:relative; /* Necessary for correct mouse co-ords in Firefox */
+}
+
+.loader {
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #FAB162; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.row {
+  width: 100%;
+  text-align: center;
+}
+.block {
+  vertical-align:top;
+  display: inline-block;
+}
+
+.row .block #left {
+    width:200 !important;
+}​
+
+.row .block #right {
+    width:200 !important;
+}
+
